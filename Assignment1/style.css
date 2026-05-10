@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('./Proxima Nova Regular.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Proxima Nova';
+    overflow-y: hidden;
+}
+
+main{
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    position: absolute;
+    z-index: 1;
+}
+
+.header img{
+    width: 240px;
+    background-color: transparent;
+}
+
+.ri-menu-line {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+.left{
+    width: 60%;
+    height: 100vh;
+    background-color: #fcc60c;
+}
+
+.right{
+    width: 40%;
+    height: 100vh;
+    background-color: #fbe8b5;
+    position: relative;
+}
+
+.left h6{
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 8px;
+    padding-top: 200px;
+    padding-left: 200px;
+}
+
+.left h1{
+    font-size: 9rem;
+    padding-left: 190px;
+}
+
+#p1 {
+    font-size: 1.2rem;
+    padding-left: 200px;
+    line-height: 2rem;
+    font-weight: 500;
+}
+
+#p2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    word-spacing: 5px;
+}
+
+.line-container{
+    margin-top: 30px;
+    padding-left: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#line {
+    width: 50px;
+}
+
+#pokeball{
+    position: relative;
+    height: 320px;
+    margin-left: 140px;
+    bottom : -170px;
+}
+
+.circle-container{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    right: 50px;
+    top: 350px;
+}
+
+#pikachu {
+    position: absolute;
+    top: 100px;
+    left: 850px;
+    height: 700px;
+    z-index: 1;
+}

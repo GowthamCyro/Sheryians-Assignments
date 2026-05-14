@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'QuietSans';
+    src: url('./FlatitQuietSansRegular.otf');
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'QuietSans';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+main{
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    background-color: #12131a;
+}
+
+.content{
+    height: 96%;
+    width: 98%;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 30% 20% 20% 30%;
+    grid-template-areas: 
+    "box1 box2 box3 box4"
+    "box1 box5 box5 box4"
+    "box6 box5 box5 box7"
+    "box8 box8 box9 box7"
+    ;
+    row-gap: 10px;
+    column-gap: 10px;
+
+}
+
+.box1 { grid-area: box1; overflow:hidden ;}
+.box1 img{object-fit: cover; width: 100%; height: 100%;object-position: 40% 20%;}
+.box2 { grid-area: box2; overflow:hidden ;}
+.box2 img{ width: 100%; height: 100%;}
+.box3 { grid-area: box3; }
+.box3 img{ width: 100%; height: 100%;}
+.box4 { grid-area: box4; overflow:hidden ;}
+.box4 img{ width: 100%; height: 100%;}
+.box5 { grid-area: box5; background-color: #fef7e3; overflow: hidden; }
+.box5 img{object-fit: cover; width: 100%; height: 100%;}
+.box6 { grid-area: box6; display: flex; flex-direction: column; background-color: #fefefe; padding: 20px; gap: 20px;}
+#b6h2{
+    font-weight: bold;
+}
+.box6 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.box7 { grid-area: box7; overflow: hidden;}
+.box7 img{object-fit: cover; width: 104%; height: 100%;object-position: 20%; border-radius: 10px;}
+.box8 { grid-area: box8; padding: 0px 10px 10px 0px; background-color: #ecb1a3;}
+.box8 img{
+    height: 100%;
+}
+.box9 { grid-area: box9; overflow: hidden; }
+.box9 img{object-fit: cover; width: 100%; height: 100%; }
+
+.box{
+    border-radius: 20px;
+}
+
+.b6{
+    display: flex;
+    gap: 10px;
+}
